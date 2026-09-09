@@ -1,7 +1,7 @@
 import Boton from "./Boton"
 import { useState } from "react"
 
-function Contador(props, salto) {
+function Contador(props) {
     const [contador, setContador] = useState(0)
 
     const incrementar = () => setContador(contador + props.salto)
@@ -15,7 +15,7 @@ function Contador(props, salto) {
       <div>
         <Boton label='Incrementar' onClick={incrementar}></Boton>
         <Boton label ='Decrementar' onClick={decrementar}></Boton>
-        <Boton label ={contador != 0 ?('Reiniciar'):('No hago nada')} onClick={resetear}></Boton>
+        {contador !== 0 && <Boton label="Reiniciar" onClick={resetear} />}
       </div>
     </div>
     )
