@@ -1,8 +1,11 @@
 import Boton from "./Boton"
 import { useState } from "react"
+import { useParams } from 'react-router-dom'
 
 function Contador(props) {
-    const [contador, setContador] = useState(0)
+    const { valorInicial } = useParams()
+    console.log(`Valor inicial: ${valorInicial}`)
+    const [contador, setContador] = useState(Number.parseInt(valorInicial) || 0)
 
     const incrementar = () => setContador(contador + props.salto)
     const decrementar = () => setContador(contador - props.salto)
