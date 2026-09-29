@@ -23,10 +23,18 @@ function Navbar() {
           </li>
           <li>
             <Link
-              to="/acerca"
+              to="/usuarios-fetch"
               className="text-white font-semibold tracking-wide transition-colors duration-300 hover:text-blue-200"
             >
-              Acerca de
+              Usuarios con Fetch
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/usuarios-axios"
+              className="text-white font-semibold tracking-wide transition-colors duration-300 hover:text-blue-200"
+            >
+              Usuarios con Axios
             </Link>
           </li>
         </ul>
