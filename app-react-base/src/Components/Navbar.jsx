@@ -37,6 +37,22 @@ function Navbar() {
               Usuarios con Axios
             </Link>
           </li>
+          <li>
+            <Link
+              to="/arrays-ejemplos"
+              className="text-white font-semibold tracking-wide transition-colors duration-300 hover:text-blue-200"
+            >
+              Arrays
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/acerca"
+              className="text-white font-semibold tracking-wide transition-colors duration-300 hover:text-blue-200"
+            >
+              Acerca
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
