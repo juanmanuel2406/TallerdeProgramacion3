@@ -5,6 +5,8 @@ import Navbar from './Components/Navbar'
 import Acerca from './Components/Acerca'
 import UsuariosConFetch from './Components/UsuariosConFetch'
 import UsuariosConAxios from './Components/UsuarioConAxios'
+import ArraysEjemplos from './Components/ArraysEjemplos'
+
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="/acerca" element={<Acerca />} />
           <Route path="/usuarios-fetch" element={<UsuariosConFetch />} />
           <Route path="/usuarios-axios" element={<UsuariosConAxios />} />
+          <Route path="/arrays-ejemplos" element={<ArraysEjemplos />} />
+        
         </Routes>
       </div>
     </>

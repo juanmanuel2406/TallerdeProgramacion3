@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 
 function UsuariosConAxios() {
@@ -40,7 +40,7 @@ function UsuariosConAxios() {
     return (
         <>
             <div>
-                <h2>Lista de Usuarios (con Fetch)</h2>
+                <h2>Lista de Usuarios (con Axios)</h2>
                 <ul>
                     {usuarios.map((usuarios) => (
                         <li key={usuarios.id}>
